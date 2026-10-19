@@ -1,0 +1,468 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Messages — Chat UI</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="app-container">
+      <nav class="nav-sidebar">
+        <div class="nav-top">
+          <a href="#" class="brand-logo">
+            <i class="bi bi-infinity"></i>
+          </a>
+
+          <div class="profile-pic">
+            <img
+              src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=100&h=100&q=80"
+              alt="My Profile"
+            />
+          </div>
+        </div>
+
+        <div class="nav-menu">
+          <a href="#" class="nav-link"><i class="bi bi-globe"></i></a>
+
+          <a href="#" class="nav-link active"
+            ><i class="bi bi-chat-dots"></i
+          ></a>
+
+          <a href="#" class="nav-link"><i class="bi bi-camera-video"></i></a>
+
+          <a href="#" class="nav-link"><i class="bi bi-music-note"></i></a>
+
+          <a href="#" class="nav-link"><i class="bi bi-calendar-check"></i></a>
+        </div>
+
+        <div class="nav-bottom">
+          <a href="#" class="nav-link muted"><i class="bi bi-gear"></i></a>
+
+          <a href="#" class="nav-link muted"
+            ><i class="bi bi-box-arrow-right"></i
+          ></a>
+        </div>
+      </nav>
+
+      <section class="messages-sidebar">
+        <div class="messages-header">
+          <h1>Messages</h1>
+
+          <div class="search-bar">
+            <i class="bi bi-search"></i>
+
+            <input type="text" placeholder="Search" />
+          </div>
+
+          <div class="sort-by">
+            <span>Sort by</span>
+
+            <a href="#" class="sort-link"
+              >Newest <i class="bi bi-chevron-down"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="contact-list">
+          <div class="contact-item">
+            <div class="avatar-container">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&h=100&q=80"
+                alt="John Doe"
+              />
+
+              <span class="online-dot"></span>
+            </div>
+
+            <div class="contact-info">
+              <div class="contact-top">
+                <span class="contact-name">📌 John Doe</span>
+
+                <span class="contact-time">16:45</span>
+              </div>
+
+              <div class="contact-bottom">
+                <span class="contact-preview">How are you doing?</span>
+
+                <i class="bi bi-check2-all read-check"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-item active">
+            <div class="avatar-container">
+              <img
+                src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=100&h=100&q=80"
+                alt="Travis Barker"
+              />
+
+              <span class="online-dot"></span>
+            </div>
+
+            <div class="contact-info">
+              <div class="contact-top">
+                <span class="contact-name">Travis Barker</span>
+
+                <span class="contact-time">16:45</span>
+              </div>
+
+              <div class="contact-bottom">
+                <span class="contact-preview typing">... is typing</span>
+
+                <i class="bi bi-check2-all gray-check"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="avatar-container">
+              <img
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&h=100&q=80"
+                alt="Kate Rose"
+              />
+
+              <span class="online-dot"></span>
+            </div>
+
+            <div class="contact-info">
+              <div class="contact-top">
+                <span class="contact-name">Kate Rose</span>
+
+                <span class="contact-time">16:45</span>
+              </div>
+
+              <div class="contact-bottom">
+                <span class="contact-preview">you: See you tomorrow!</span>
+
+                <i class="bi bi-check read-check"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="avatar-container">
+              <img
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&h=100&q=80"
+                alt="Robert Parker"
+              />
+
+              <span class="online-dot"></span>
+            </div>
+
+            <div class="contact-info">
+              <div class="contact-top">
+                <span class="contact-name">Robert Parker</span>
+
+                <span class="contact-time">16:45</span>
+              </div>
+
+              <div class="contact-bottom">
+                <span class="contact-preview">Awesome!</span>
+
+                <span class="badge">2</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="avatar-container">
+              <img
+                src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=100&h=100&q=80"
+                alt="Rick Owens"
+              />
+
+              <span class="online-dot"></span>
+            </div>
+
+            <div class="contact-info">
+              <div class="contact-top">
+                <span class="contact-name">Rick Owens</span>
+
+                <span class="contact-time">16:45</span>
+              </div>
+
+              <div class="contact-bottom">
+                <span class="contact-preview">Good idea 😋</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="avatar-container">
+              <img
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=100&h=100&q=80"
+                alt="George Orwell"
+              />
+            </div>
+
+            <div class="contact-info">
+              <div class="contact-top">
+                <span class="contact-name">George Orwell</span>
+
+                <span class="contact-time">16:45</span>
+              </div>
+
+              <div class="contact-bottom">
+                <span class="contact-preview">you: Literally 1984 🫡</span>
+
+                <i class="bi bi-check read-check"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="avatar-container">
+              <img
+                src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=100&h=100&q=80"
+                alt="Franz Kafka"
+              />
+
+              <span class="online-dot"></span>
+            </div>
+
+            <div class="contact-info">
+              <div class="contact-top">
+                <span class="contact-name">Franz Kafka</span>
+
+                <span class="contact-time">16:45</span>
+              </div>
+
+              <div class="contact-bottom">
+                <span class="contact-preview"
+                  >Are you interested in insecticides for..</span
+                >
+
+                <i class="bi bi-check2-all read-check"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="avatar-container">
+              <img
+                src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=100&h=100&q=80"
+                alt="Tom Hardy"
+              />
+
+              <span class="online-dot"></span>
+            </div>
+
+            <div class="contact-info">
+              <div class="contact-top">
+                <span class="contact-name">Tom Hardy</span>
+
+                <span class="contact-time">16:45</span>
+              </div>
+
+              <div class="contact-bottom">
+                <span class="contact-preview">Smells like design spirit..</span>
+
+                <i class="bi bi-check2-all read-check"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="avatar-container">
+              <img
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&h=100&q=80"
+                alt="Vivienne Westwood"
+              />
+            </div>
+
+            <div class="contact-info">
+              <div class="contact-top">
+                <span class="contact-name">Vivienne Westwood</span>
+
+                <span class="contact-time">16:45</span>
+              </div>
+
+              <div class="contact-bottom">
+                <span class="contact-preview">This cat is so funny 😹</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="avatar-container">
+              <img
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&h=100&q=80"
+                alt="Anthony Paul"
+              />
+            </div>
+
+            <div class="contact-info">
+              <div class="contact-top">
+                <span class="contact-name">Anthony Paul</span>
+
+                <span class="contact-time">16:45</span>
+              </div>
+
+              <div class="contact-bottom">
+                <span class="contact-preview">Check out my page 🤩</span>
+
+                <i class="bi bi-check2-all read-check"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="avatar-container">
+              <img
+                src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&h=100&q=80"
+                alt="Stan Smith"
+              />
+            </div>
+
+            <div class="contact-info">
+              <div class="contact-top">
+                <span class="contact-name">Stan Smith</span>
+
+                <span class="contact-time">16:45</span>
+              </div>
+
+              <div class="contact-bottom">
+                <span class="contact-preview">Want to see this kicks rn</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <main class="chat-area">
+        <header class="chat-header">
+          <div class="chat-header-left">
+            <button
+              class="back-btn"
+              type="button"
+              aria-label="Back to messages"
+            >
+              <i class="bi bi-arrow-left"></i>
+            </button>
+            <div class="chat-user">
+              <div class="avatar-container">
+                <img
+                  src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=100&h=100&q=80"
+                  alt="Travis Barker"
+                />
+                <span class="online-dot"></span>
+              </div>
+              <div class="user-details">
+                <h2>Travis Barker</h2>
+                <span class="online-status">Online</span>
+              </div>
+            </div>
+          </div>
+          <div class="chat-header-actions">
+            <button class="icon-btn green-btn" aria-label="Video call">
+              <i class="bi bi-camera-video"></i>
+            </button>
+            <button class="icon-btn gray-btn" aria-label="Chat information">
+              <i class="bi bi-info-circle"></i>
+            </button>
+          </div>
+        </header>
+
+        <div class="chat-messages">
+          <div class="message incoming">
+            <div class="preview-card">
+              <div class="preview-banner">
+                <div class="banner-text">
+                  <span class="banner-brand">GozinCha</span>
+
+                  <h3>Car sharing<br />service<br />Mobile App</h3>
+                </div>
+
+                <div class="banner-mockup">
+                  <img
+                    src="./assets/1 7.svg"
+                    alt="Car sharing mockups"
+                  />
+                </div>
+
+                <span class="banner-page">Page <b>1</b> of 7</span>
+              </div>
+
+              <div class="preview-link">
+                <a
+                  href="https://dribbble.com/shots/17742253-ui-kit-designjam"
+                  target="_blank"
+                >
+                  https://dribbble.com/shots/17742253-ui-kit-designjam
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="message incoming">
+            <div class="bubble">See you at office tomorrow!</div>
+
+            <span class="message-time">15:42</span>
+          </div>
+
+          <div class="message outgoing">
+            <div class="bubble">Thank you for work, see you!</div>
+
+            <span class="message-time">
+              <i class="bi bi-check2-all read-check"></i> 15:42
+            </span>
+          </div>
+
+          <div class="date-divider">
+            <span>Today</span>
+          </div>
+
+          <div class="message incoming with-avatar">
+            <img
+              src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=100&h=100&q=80"
+              alt="Travis"
+              class="sender-avatar"
+            />
+
+            <div class="message-content">
+              <div class="bubble">
+                Hello! Have you seen my backpack anywhere in office?
+              </div>
+
+              <span class="message-time">15:42</span>
+            </div>
+          </div>
+
+          <div class="message outgoing">
+            <div class="bubble">
+              Hi, yes, David have found it, ask our concierge 👀
+            </div>
+
+            <span class="message-time">
+              <i class="bi bi-check2-all read-check"></i> 15:42
+            </span>
+          </div>
+        </div>
+
+        <footer class="chat-footer">
+          <button class="attach-btn">
+            <i class="bi bi-paperclip"></i>
+          </button>
+
+          <div class="input-wrapper">
+            <input type="text" placeholder="Type your message here..." />
+
+            <button class="send-btn">Send message</button>
+          </div>
+        </footer>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
